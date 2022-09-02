@@ -7,16 +7,19 @@ let toggleBtn = document.querySelector('.toggleBtn');
 btn[i].addEventListener("click", function(){
     if(this.innerHTML=="="){
         value.innerHTML = eval(value.innerHTML);
-    }else {
+    }
+    else 
+    {
     if(this.innerHTML=="Clear"){
         value.innerHTML = "";
-                    }
-    else{
-        value.innerHTML+= this.innerHTML;
-         }
-         }
-            })
-        }
+    }
+    else
+    {
+    value.innerHTML+= this.innerHTML;
+    }
+    }
+    })
+    }
 toggleBtn.onclick = function(){
 body.classList.toggle('dark');
         }
